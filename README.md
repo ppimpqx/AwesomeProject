@@ -1,2 +1,2 @@
-how to run
+**how to run**
   npx expo start
