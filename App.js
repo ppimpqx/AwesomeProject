@@ -1,5 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import ChartKitScreen from './screens/week5/ChartKitScreen';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
+import Event from './components/week6/Event';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
 
 // import Welcome from './screens/Welcome';
 // import Ex01 from './screens/week2/Ex01';
@@ -20,7 +28,8 @@ import React from 'react';
 
 // import { PaperProvider } from 'react-native-paper';
 // import TestPaper from './screens/week4/TestPaper';
-import Resort from './screens/week3/Resort';
+// import Resort from './screens/week3/Resort';
+// import Health from './screens/week5/Health';
 
 
 export default function App() {
@@ -42,8 +51,17 @@ export default function App() {
     // <PaperProvider>
     //   <TestPaper />
     // </PaperProvider>
-      <Resort/>
-
+    // <Resort/>
+    // <Health />
+    // <ChartKitScreen />
+    // <Home/>
+    // <FlatListExample/>
+    // <Event/>
+    <NavigationContainer>
+            {/* <HomeStack /> */}
+            {/* <BottomTab /> */}
+            <RootStack />
+    </NavigationContainer>
   );
 }
 
