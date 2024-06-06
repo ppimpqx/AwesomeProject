@@ -3,6 +3,7 @@ import { Alert, Image, Text, TouchableOpacity, View } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import BookStorage from "../../storages/BookStorage";
+
 export default function BookDetail() {
     const navigation = useNavigation();
     const route = useRoute();   

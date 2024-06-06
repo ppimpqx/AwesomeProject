@@ -8,6 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/BottomTab';
 import RootStack from './navigations/RootStack';
+import { AuthContext, AuthContextProvider } from "./hooks/AuthContextProvider";
 
 // import Welcome from './screens/Welcome';
 // import Ex01 from './screens/week2/Ex01';
@@ -57,11 +58,13 @@ export default function App() {
     // <Home/>
     // <FlatListExample/>
     // <Event/>
-    <NavigationContainer>
-            {/* <HomeStack /> */}
-            {/* <BottomTab /> */}
-            <RootStack />
-    </NavigationContainer>
+    <AuthContextProvider>
+      <NavigationContainer>
+              {/* <HomeStack /> */}
+              {/* <BottomTab /> */}
+              <RootStack />
+      </NavigationContainer>
+    </AuthContextProvider>
   );
 }
 

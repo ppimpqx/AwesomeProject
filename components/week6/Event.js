@@ -34,7 +34,7 @@ export default function Event(props) {
                         console.log(item, index, item.uri);
                         return (
                             <View style={{ marginRight: 10 }}>
-                                <Image style={{ width: 260, height: 150, borderTopLeftRadius: 10,borderTopRightRadius: 10 }} source={{ uri: item.uri }} />
+                            <Image style={{ width: 50, height: 50, borderRadius: 50 / 2 }} source={require("../../assets/week3/profile-2.jpg")} />
                                 <View style={{flexDirection : "row", marginTop: -30, height: 70, width: 260, paddingHorizontal: 10, backgroundColor: 'lightyellow', borderBottomLeftRadius: 10, borderBottomRightRadius: 10,borderColor:"gray" ,borderWidth:1}}>
                                     <View style={{ padding:8 }}>
 
